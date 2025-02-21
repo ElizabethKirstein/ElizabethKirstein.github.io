@@ -16,7 +16,7 @@
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#services">Relevant Coursework</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
@@ -34,7 +34,7 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="./images/seniorphoto_1.JPG" alt="">
+                <img src="images/seniorphoto_1.JPG" alt="">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
@@ -90,44 +90,59 @@
         <div class="services-list active-tab">
             <div>
                 <i class="fa-solid fa-code"></i>
+                <h2>Principals of Programming Languages</h2>
+                <p>Stevens Institute of Technology Spring '25 CS496</p>
+                <a target="_blank" href="https://stevens.smartcatalogiq.com/en/2024-2025/academic-catalog/courses/cs-computer-science/400/cs-496/">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Systems Programming</h2>
+                <p>Stevens Institute of Technology Spring '25 CS392</p>
+                <a target="_blank" href="https://stevens.smartcatalogiq.com/en/2024-2025/academic-catalog/courses/cs-computer-science/300/cs-392/">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-calculator"></i>
+                <h2>Linear Algebra</h2>
+                <p>Stevens Institute of Technology Spring '25 MA232</p>
+                <a target="_blank" href="https://stevens.smartcatalogiq.com/en/2024-2025/academic-catalog/courses/ma-mathematics/200/ma-232/">learn more</a>
+            </div>
+        </div>
+        <div class="services-list" id="inactive">
+            <div>
+                <i class="fa-solid fa-code"></i>
                 <h2>Algorithms</h2>
-                <p>Description for service one</p>
-                <a href="#">learn more</a>
+                <p>Stevens Institute of Technology Fall '24 CS385</p>
+                <a target="_blank" href="https://stevens.smartcatalogiq.com/en/2024-2025/academic-catalog/courses/cs-computer-science/300/cs-385/">learn more</a>
+            </div>          
+            <div>
+                <i class="fa-solid fa-square-binary"></i>
+                <h2>Computer Architecture and Organization</h2>
+                <p>Stevens Institute of Technology Fall '24 CS382</p>
+                <a target="_blank" href="https://stevens.smartcatalogiq.com/en/2024-2025/academic-catalog/courses/cs-computer-science/300/cs-382/">learn more</a>
             </div>
             <div>
-                <i class="fa-solid fa-crop"></i>
-                <h2>Computer Architecture and organization</h2>
-                <p>Description for service two</p>
-                <a href="#">learn more</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-app-store-ios"></i>
+                <i class="fa-solid fa-code"></i>
                 <h2>Data Structures</h2>
-                <p>Description for service three</p>
-                <a href="#">learn more</a>
+                <p>Stevens Institute of Technology Spring '24 CS284</p>
+                <a target="_blank" href="https://stevens.smartcatalogiq.com/en/2024-2025/academic-catalog/courses/cs-computer-science/200/cs-284/">learn more</a>
             </div>
         </div>
-        <div class="services-list">
+        <div class="services-list" id="inactive-1">
             <div>
-                <i class="fa-brands fa-app-store-ios"></i>
+                <i class="fa-solid fa-code"></i>
                 <h2>Intro to Computer Science</h2>
-                <p>Description for service three</p>
-                <a href="#">learn more</a>
+                <p>Stevens Institute of Technology Fall '23 CS115</p>
+                <a target="_blank" href="https://stevens.smartcatalogiq.com/en/2024-2025/academic-catalog/courses/cs-computer-science/100/cs-115/">learn more</a>
             </div>
             <div>
-                <i class="fa-brands fa-app-store-ios"></i>
+                <i class="fa-solid fa-code"></i>
                 <h2>Intermediate Data Programming</h2>
-                <p>Description for service three</p>
-                <a href="#">learn more</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-app-store-ios"></i>
-                <h2>Another class...</h2>
-                <p>Description for service three</p>
-                <a href="#">learn more</a>
+                <p>University of Washinton Fall '22 to Spring '23 CSE163</p>
+                <a target="_blank" href="https://courses.cs.washington.edu/courses/cse163/">learn more</a>
             </div>
         </div>
-        <a href="#" class="btn">See More</a>
+        <a class="services-btn active-btn" id="morebtn" onclick="seemore()">See More</a>
+        <a class="services-btn" id="lessbtn" onclick="seeless()">See Less</a>
     </div>
 </div>
 <!--------------PORTFOLIO---------------->
@@ -136,7 +151,7 @@
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
             <div class="work">
-                <img src="./images/work1.jpg" alt="">
+                <img src="images/work1.jpg" alt="">
                 <div class="layer">
                     <h3>Income Inequality</h3>
                     <p>The app connects you to the osdhfosdfio oifsodhfhsd
@@ -145,16 +160,16 @@
                 </div>
             </div>
             <div class="work">
-                <img src="./images/work2.jpg" alt="">
+                <img src="images/work2.jpg" alt="">
                 <div class="layer">
-                    <h3>Music App</h3>
+                    <h3>Shifteez ????</h3>
                     <p>The app connects you to the osdhfosdfio oifsodhfhsd
                         sdkjfbsdkljfhkjsdf</p>
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="./images/work3.jpg" alt="">
+                <img src="images/work3.jpg" alt="">
                 <div class="layer">
                     <h3>Online Shopping App</h3>
                     <p>The app connects you to the osdhfosdfio oifsodhfhsd
@@ -179,7 +194,7 @@
                     <a href=""><i class="fa-brands fa-linkedin"></i></a>
                     <a href=""><i class="fa-brands fa-instagram"></i></a>
                 </div>
-                <a href="./images/Resume Work.pdf" download class="btn btn2">Download Resume</a>
+                <a href="images/Resume Work.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
@@ -197,6 +212,26 @@
     </div>
 </div>
 
+
+<script>
+    var service = document.getElementById("inactive")
+    var service_1 = document.getElementById("inactive-1")
+    var morebtn = document.getElementById("morebtn")
+    var lessbtn = document.getElementById("lessbtn")
+    function seemore() {
+        service.classList.add("active-tab")
+        service_1.classList.add("active-tab")
+        morebtn.classList.remove("active-btn")
+        lessbtn.classList.add("active-btn")
+    }
+    function seeless() {
+        service.classList.remove("active-tab")
+        service_1.classList.remove("active-tab")
+        morebtn.classList.add("active-btn")
+        lessbtn.classList.remove("active-btn")
+    }
+
+</script>
 
 <script>
     var tablinks = document.getElementsByClassName("tab-links")
